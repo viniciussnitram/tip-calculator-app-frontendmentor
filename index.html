@@ -24,36 +24,36 @@
 <body>
   <main>
     <form class="form" action="">
-      <label for="bill">Bill
-      <input type="number" name="bill" id="bill">
+      <label for="form-bill">Bill
+      <input class="form-bill" type="number" name="form-bill" id="form-bill">
       
-      <label for="">Select Tip %
-      <input type="button" value="5%">
-      <input type="button" value="10%">
-      <input type="button" value="15%">
-      <input type="button" value="20%">
-      <input type="button" value="25%">
-      <input type="text" name="" id="" placeholder="Custom">
+      <label for="form-select-tip">Select Tip %
+      <input class="form-select-tip" name="form-select-tip" type="button" value="5%">
+      <input class="form-select-tip" name="form-select-tip" type="button" value="10%">
+      <input class="form-select-tip" name="form-select-tip" type="button" value="15%">
+      <input class="form-select-tip" name="form-select-tip" type="button" value="20%">
+      <input class="form-select-tip" name="form-select-tip" type="button" value="25%">
+      <input id="form-select-tip-custom" class="form-select-tip-custom" name="form-select-tip-custom" type="text" placeholder="Custom">
 
-      <label for="">Number of People
-      <input type="number" name="" id="">
+      <label for="form-number-of-people">Number of People
+      <input id="form-number-of-people" class="form-number-of-people" name="form-number-of-people" type="number">
     </form>
 
-    <section>
+    <section class="section">
       <div>
-        <h4>Tip Amount</h4>
-        <span>/ person</span>
+        <h4 id="section-tip-amount" class="section-title">Tip Amount</h4>
+        <span class="section-title-info">/ person</span>
         
-        <h4>Total</h4>
-        <span>/ person</span>
+        <h4 class="section-title">Total</h4>
+        <span class="section-title-info">/ person</span>
       </div>
 
       <div>
-        <h2>$0.00</h2>
-        <h2>$0.00</h2>
+        <h2 class="section-result" id="result-amount">$0.00</h2>
+        <h2 class="section-result" id="result-total">$0.00</h2>
       </div>
 
-      <input type="button" value="Reset">
+      <input class="section-button" type="button" value="Reset">
     </section>
   </main>
   
