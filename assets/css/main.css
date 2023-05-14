@@ -16,6 +16,17 @@ body {
     background-color: var(--light-grayish-cyan);
 }
 
+main {
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 30px;
+}
+
 input {
     font-size: 24px;
 }
