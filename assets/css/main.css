@@ -15,3 +15,14 @@
 body {
     background-color: var(--light-grayish-cyan);
 }
+
+input {
+    font-size: 24px;
+}
+
+.attribution {
+    bottom: 0;
+    padding: 20px;
+    position: fixed;
+    width: 100vw;
+}
