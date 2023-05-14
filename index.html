@@ -13,6 +13,7 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/form/form.css">
+  <link rel="stylesheet" href="/assets/css/section/section.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -25,10 +26,10 @@
 <body>
   <main>
     <form class="form" action="">
-      <label for="form-bill">Bill
+      <label for="form-bill">Bill</label>
       <input class="form-bill" type="number" name="form-bill" id="form-bill">
       
-      <label for="form-select-tip">Select Tip %
+      <label for="form-select-tip">Select Tip %</label>
       <input class="form-select-tip" name="form-select-tip" type="button" value="5%">
       <input class="form-select-tip" name="form-select-tip" type="button" value="10%">
       <input class="form-select-tip" name="form-select-tip" type="button" value="15%">
@@ -36,25 +37,30 @@
       <input class="form-select-tip" name="form-select-tip" type="button" value="25%">
       <input id="form-select-tip-custom" class="form-select-tip-custom" name="form-select-tip-custom" type="text" placeholder="Custom">
 
-      <label for="form-number-of-people">Number of People
+      <label for="form-number-of-people">Number of People</label>
       <input id="form-number-of-people" class="form-number-of-people" name="form-number-of-people" type="number">
     </form>
 
     <section class="section">
       <div>
-        <h4 id="section-tip-amount" class="section-title">Tip Amount</h4>
-        <span class="section-title-info">/ person</span>
+        <p class="section-title">
+          Tip Amount<br>
+          <span>/ person</span>
+        </p>
         
-        <h4 class="section-title">Total</h4>
-        <span class="section-title-info">/ person</span>
-      </div>
-
-      <div>
         <h2 class="section-result" id="result-amount">$0.00</h2>
+      </div>
+        
+      <div>
+        <p class="section-title">
+          Total<br>
+          <span>/ person</span>
+        </p>
+        
         <h2 class="section-result" id="result-total">$0.00</h2>
       </div>
 
-      <input class="section-button" type="button" value="Reset">
+      <input class="section-button" type="button" value="RESET">
     </section>
   </main>
   

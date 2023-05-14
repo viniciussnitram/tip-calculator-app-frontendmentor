@@ -1,0 +1,43 @@
+.section {
+    background-color: var(--very-dark-cyan);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    width: 35%;
+}
+
+div {
+    align-items: center;
+    display: flex;
+    height: 48px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    color: var(--white);
+}
+
+.section span {
+    color: var(--dark-grayish-cyan);
+}
+
+.section-result {
+    color: var(--strong-cyan);
+    font-size: 42px;
+}
+
+.section-button {
+    background-color: var(--strong-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--very-dark-cyan);
+    outline: none;
+    line-height: 2em;
+    margin-top: 100px;
+}
+
+.section-button:hover {
+    cursor: pointer;
+}

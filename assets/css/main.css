@@ -4,12 +4,13 @@
     --dark-grayish-cyan: #5E7A7D;
     --grayish-cyan: #7F9C9F;
     --light-grayish-cyan: #C5E4E7;
-    --very-light-grayish-cyan: #f4FAFA;
+    --very-light-grayish-cyan: #F4FAFA;
     --white: #FFFFFF;
 }
 
 * {
     font-family: 'Space Mono', monospace;
+    font-weight: 700;
 }
 
 body {
@@ -21,9 +22,9 @@ main {
     background-color: var(--white);
     border-radius: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
-    max-width: 1024px;
+    max-width: 900px;
     padding: 30px;
 }
 
@@ -32,6 +33,7 @@ input {
 }
 
 .attribution {
+    display: inline;
     bottom: 0;
     padding: 20px;
     position: fixed;
