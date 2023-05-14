@@ -6,3 +6,7 @@
     --very-light-grayish-cyan: #f4FAFA;
     --white: #FFFFFF;
 }
+
+* {
+    font-family: 'Space Mono', monospace;
+}
