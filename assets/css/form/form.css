@@ -1,4 +1,38 @@
 .form {
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
+    width: 48%;
+}
+
+.form-select-tip {
+    background-color: var(--very-dark-cyan);
+    display: block;
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    line-height: 40px;
+    width: 115px;
+}
+
+.form-select-tip:hover {
+    cursor: pointer;
+}
+
+.form-select-tip-custom {
+    display: block;
+    text-align: center;
+    width: 111px;
+}
+
+.form-select-tip-div, input[type="text"] {
+    padding: 0;
+}
+
+.form-select-tip-div {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
 }
