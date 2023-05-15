@@ -16,13 +16,31 @@
 }
 
 .form-select-tip:hover {
+    background-color: #9DE6E0;
+    color: var(--very-dark-cyan);
     cursor: pointer;
 }
 
 .form-select-tip-custom {
+    background-color: var(--very-light-grayish-cyan);
+    color: var(--very-dark-cyan);
+    border: none;
+    border-radius: 5px;
     display: block;
+    outline: none;
     text-align: center;
+    line-height: 40px;
     width: 111px;
+}
+
+.form-select-tip-custom:focus {
+    outline: 2px solid var(--strong-cyan);
+    text-align: end;
+}
+
+.form-select-tip-custom::placeholder {
+    color: var(--dark-grayish-cyan);
+    text-align: center;
 }
 
 .form-select-tip-div, input[type="text"] {
@@ -33,6 +51,6 @@
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: flex-start;
 }
