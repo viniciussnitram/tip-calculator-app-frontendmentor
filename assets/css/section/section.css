@@ -33,11 +33,13 @@ div {
     border: none;
     border-radius: 5px;
     color: var(--very-dark-cyan);
+    font-size: 24px;
     outline: none;
     line-height: 2em;
     margin-top: 100px;
 }
 
 .section__button:hover {
+    background-color: var(--light-grayish-cyan);
     cursor: pointer;
 }
