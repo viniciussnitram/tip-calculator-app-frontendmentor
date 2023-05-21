@@ -26,43 +26,43 @@
 <body>
   <main>
     <form class="form" action="">
-      <label for="form-bill">Bill</label>
-      <input class="form-bill" type="number" name="form-bill" id="form-bill">
+      <label class="form__label" for="form-bill">Bill</label>
+      <input class="form__input form__input--dollar" type="number" name="form-bill" placeholder="0">
       
-      <label for="form-select-tip">Select Tip %</label>
-      <div class="form-select-tip-div">
-        <input class="form-select-tip" name="form-select-tip" type="button" value="5%">
-        <input class="form-select-tip" name="form-select-tip" type="button" value="10%">
-        <input class="form-select-tip" name="form-select-tip" type="button" value="15%">
-        <input class="form-select-tip" name="form-select-tip" type="button" value="20%">
-        <input class="form-select-tip" name="form-select-tip" type="button" value="25%">
-        <input id="form-select-tip-custom" class="form-select-tip-custom" name="form-select-tip-custom" type="text" placeholder="Custom">
+      <label class="form__label" for="form-select-tip">Select Tip %</label>
+      <div class="form__div--select-tip">
+        <input class="form__input form__input--tip" name="form-select-tip" type="button" value="5%">
+        <input class="form__input form__input--tip" name="form-select-tip" type="button" value="10%">
+        <input class="form__input form__input--tip" name="form-select-tip" type="button" value="15%">
+        <input class="form__input form__input--tip" name="form-select-tip" type="button" value="20%">
+        <input class="form__input form__input--tip" name="form-select-tip" type="button" value="25%">
+        <input class="form__input form__input--custom-tip" name="form-select-tip-custom" type="text" placeholder="Custom">
       </div>
 
-      <label for="form-number-of-people">Number of People</label>
-      <input id="form-number-of-people" class="form-number-of-people" name="form-number-of-people" type="number">
+      <label class="form__label form__label" for="form-number-of-people">Number of People</label>
+      <input class="form__input form__input--person" name="form-number-of-people" type="number" placeholder="0">
     </form>
 
     <section class="section">
       <div>
-        <p class="section-title">
+        <p class="section__title">
           Tip Amount<br>
           <span>/ person</span>
         </p>
         
-        <h2 class="section-result" id="result-amount">$0.00</h2>
+        <h2 class="section__result" id="result-amount">$0.00</h2>
       </div>
         
       <div>
-        <p class="section-title">
+        <p class="section__title">
           Total<br>
           <span>/ person</span>
         </p>
         
-        <h2 class="section-result" id="result-total">$0.00</h2>
+        <h2 class="section__result" id="result-total">$0.00</h2>
       </div>
 
-      <input class="section-button" type="button" value="RESET">
+      <input class="section__button" type="button" value="RESET">
     </section>
   </main>
   

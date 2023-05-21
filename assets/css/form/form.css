@@ -2,55 +2,104 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
-    width: 48%;
+    width: 43%;
 }
 
-.form-select-tip {
-    background-color: var(--very-dark-cyan);
-    display: block;
-    color: var(--white);
-    border: none;
-    border-radius: 5px;
-    line-height: 40px;
-    width: 115px;
-}
-
-.form-select-tip:hover {
-    background-color: #9DE6E0;
-    color: var(--very-dark-cyan);
-    cursor: pointer;
-}
-
-.form-select-tip-custom {
-    background-color: var(--very-light-grayish-cyan);
-    color: var(--very-dark-cyan);
-    border: none;
-    border-radius: 5px;
-    display: block;
-    outline: none;
-    text-align: center;
-    line-height: 40px;
-    width: 111px;
-}
-
-.form-select-tip-custom:focus {
-    outline: 2px solid var(--strong-cyan);
-    text-align: end;
-}
-
-.form-select-tip-custom::placeholder {
+.form__label {
+    font-size: 18px;
     color: var(--dark-grayish-cyan);
-    text-align: center;
+    margin-bottom: 10px;
 }
 
-.form-select-tip-div, input[type="text"] {
-    padding: 0;
+.form__input {
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+    outline-color: var(--strong-cyan);
 }
 
-.form-select-tip-div {
+.form__input--dollar {
+    background-image: url('/assets/images/icon-dollar.svg');
+    background-repeat: no-repeat;
+}
+
+.form__input--person {
+    background-image: url('/assets/images/icon-person.svg');
+    background-repeat: no-repeat;
+}
+
+.form__input--dollar::-webkit-outer-spin-button,
+.form__input--dollar::-webkit-inner-spin-button,
+.form__input--person::-webkit-outer-spin-button,
+.form__input--person::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form__input--dollar, .form__input--person {
+    background-color: #F4FAFA;
+    color: var(--very-dark-cyan);
+    line-height: 2em;
+    padding: 0px 15px;
+    text-align: right;
+    -moz-appearance: textfield;
+}
+
+.form__input--dollar::placeholder, .form__input--person::placeholder {
+    color: var(--grayish-cyan);
+}
+
+.form__div--select-tip {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: flex-start;
+}
+
+.form__input--tip {
+    background-color: var(--very-dark-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    display: block;
+    line-height: 24px;
+    padding: 10px;
+    width: 115px;
+}
+
+.form__input--tip:hover {
+    background-color: #9DE6E0;
+    color: var(--very-dark-cyan);
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form__input--custom-tip {
+    background-color: var(--very-light-grayish-cyan);
+    border: none;
+    border-radius: 5px;
+    color: var(--very-dark-cyan);
+    display: block;
+    line-height: 24px;
+    outline: none;
+    padding: 4px;
+    text-align: center;
+    width: 111px;
+}
+
+.form__input--custom-tip:hover {
+    cursor: pointer;
+}
+
+.form__input--custom-tip:focus {
+    outline: 2px solid var(--strong-cyan);
+    text-align: end;
+    line-height: 24px;
+    padding: 4px;
+}
+
+.form__input--custom-tip::placeholder {
+    color: var(--dark-grayish-cyan);
+    text-align: center;
 }
