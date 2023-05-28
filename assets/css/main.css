@@ -41,15 +41,21 @@ main {
 }
 
 .attribution {
-    display: inline;
     bottom: 0;
+    display: inline;
+    font-size: 11px;
+    height: auto;
     margin-bottom: 0;
     padding: 20px;
     position: fixed;
+    text-align: center;
     width: 100vw;
-    height: auto;
 }
 
-a:hover {
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
     color: var(--dark-grayish-cyan);
 }
