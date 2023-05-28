@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     padding: 45px;
-    width: 35%;
+    width: 40%;
 }
 
 div {
@@ -42,4 +42,10 @@ div {
 .section__button:hover {
     background-color: var(--light-grayish-cyan);
     cursor: pointer;
+}
+
+.section__button:disabled {
+    background-color: #26C0AB;
+    opacity: 0.5;
+    cursor: default;
 }
