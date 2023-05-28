@@ -21,6 +21,11 @@
     margin-bottom: 10px;
 }
 
+.form__label--warning {
+    margin-left: 90px;
+    color: red;
+}
+
 .form__input {
     box-sizing: border-box;
     font-size: 24px;
@@ -58,11 +63,14 @@
     line-height: 2em;
     padding: 0px 15px;
     text-align: right;
-    -moz-appearance: textfield;
 }
 
 .form__input--dollar::placeholder, .form__input--person::placeholder {
     color: var(--grayish-cyan);
+}
+
+.form__input--warning {
+    border: 2px solid red;
 }
 
 .form__div--select-tip {

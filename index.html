@@ -24,28 +24,31 @@
   </style>
 </head>
 <body>
+  <header>
+    <img src="/assets/images/logo.svg" alt="SPLITTER Logo">
+  </header>
   <main>
     <form class="form" action="">
       <div class="form__div">
-        <label class="form__label" for="form-bill">Bill</label>
-        <input class="form__input form__input--dollar" type="number" name="form-bill" placeholder="0">
+        <label class="form__label" for="input-bill">Bill</label>
+        <input class="form__input form__input--dollar" type="number" name="input-bill" placeholder="0" id="input-bill">
       </div>
 
       <div class="form__div">
         <label class="form__label" for="form-select-tip">Select Tip %</label>
         <div class="form__div--select-tip">
-          <input class="form__input form__input--tip" name="form-select-tip" type="button" value="5%">
-          <input class="form__input form__input--tip" name="form-select-tip" type="button" value="10%">
-          <input class="form__input form__input--tip" name="form-select-tip" type="button" value="15%">
-          <input class="form__input form__input--tip" name="form-select-tip" type="button" value="20%">
-          <input class="form__input form__input--tip" name="form-select-tip" type="button" value="25%">
-          <input class="form__input form__input--custom-tip" name="form-select-tip-custom" type="text" placeholder="Custom">
+          <button class="form__input form__input--tip" name="form-select-tip" type="button" value="5" id="input-tip-5">5%</button>
+          <button class="form__input form__input--tip" name="form-select-tip" type="button" value="10" id="input-tip-10">10%</button>
+          <button class="form__input form__input--tip" name="form-select-tip" type="button" value="15" id="input-tip-15">15%</button>
+          <button class="form__input form__input--tip" name="form-select-tip" type="button" value="20" id="input-tip-20">20%</button>
+          <button class="form__input form__input--tip" name="form-select-tip" type="button" value="25" id="input-tip-25">25%</button>
+          <input class="form__input form__input--custom-tip" name="form-select-tip-custom" type="text" placeholder="Custom" id="input-tip-custom">
         </div>
       </div>
 
       <div class="form__div">
-        <label class="form__label form__label" for="form-number-of-people">Number of People</label>
-        <input class="form__input form__input--person" name="form-number-of-people" type="number" placeholder="0">
+        <label class="form__label" for="form-number-of-people">Number of People <span id="warning"></span></label>
+        <input class="form__input form__input--person" name="form-number-of-people" type="number" placeholder="0" id="input-person">
       </div>
     </form>
 
@@ -68,7 +71,7 @@
         <h2 class="section__result" id="result-total">$0.00</h2>
       </div>
 
-      <input class="section__button" type="button" value="RESET">
+      <input class="section__button" type="button" value="RESET" id="reset">
     </section>
   </main>
   
@@ -76,5 +79,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/viniciussnitram" target="_blank">Vinicius Martins</a>.
   </div>
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

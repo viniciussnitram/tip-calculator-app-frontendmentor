@@ -13,10 +13,16 @@
     font-weight: 700;
 }
 
+header {
+    top: 80px;
+    position: fixed;
+}
+
 body {
     align-items: center;
     background-color: var(--light-grayish-cyan);
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     margin: 0 auto;
@@ -37,7 +43,13 @@ main {
 .attribution {
     display: inline;
     bottom: 0;
+    margin-bottom: 0;
     padding: 20px;
     position: fixed;
     width: 100vw;
+    height: auto;
+}
+
+a:hover {
+    color: var(--dark-grayish-cyan);
 }
