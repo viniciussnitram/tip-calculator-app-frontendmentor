@@ -40,14 +40,14 @@ for (let i = 0; i < percentages.length; i++) {
     const btnTip = percentages[i];
     const tip = parseInt(btnTip.value);
 
-    btnTip.onclick = () => {
+    btnTip.addEventListener('click', () => {
         const percentageTip = tip / 100;
         calculateTip(percentageTip);
         checkNumberOfPeople();
         if (bill.value == 0) {
             btnReset.setAttribute('disabled', '');
         }
-    }
+    })
 }
 
 const tipCustomPercent = document.getElementById("input-tip-custom");
