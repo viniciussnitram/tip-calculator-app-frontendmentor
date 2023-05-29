@@ -36,14 +36,14 @@
 }
 
 .form__input--dollar {
-    background-image: url('../../images/icon-dollar.svg');
+    background-image: url('../../../images/icon-dollar.svg');
     background-repeat: no-repeat;
     background-position-x: 15px;
     background-position-y: center;
 }
 
 .form__input--person {
-    background-image: url('../../images/icon-person.svg');
+    background-image: url('../../../images/icon-person.svg');
     background-repeat: no-repeat;
     background-position-x: 15px;
     background-position-y: center;
