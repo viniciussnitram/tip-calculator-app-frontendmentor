@@ -14,8 +14,7 @@
 }
 
 header {
-    top: 80px;
-    position: fixed;
+    margin: 50px auto;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
     background-color: var(--light-grayish-cyan);
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     margin: 0 auto;
 }
@@ -45,11 +44,11 @@ main {
     display: inline;
     font-size: 11px;
     height: auto;
+    margin-top: 11%;
     margin-bottom: 0;
     padding: 20px;
-    position: fixed;
     text-align: center;
-    width: 100vw;
+    width: 90vw;
 }
 
 .attribution a {
