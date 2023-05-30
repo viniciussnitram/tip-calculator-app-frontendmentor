@@ -5,14 +5,6 @@ const percentages = document.querySelectorAll(".form__input--tip");
 let resultAmount = document.getElementById("result-amount");
 let resultTotal = document.getElementById("result-total");
 
-function hasBtnResetAttribute() {
-    if (btnReset.hasAttribute('disabled')) {
-        btnReset.removeAttribute('disabled');
-    } else {
-        btnReset.setAttribute('disabled', '');
-    }
-}
-
 function checkNumberOfPeople() {
     const warning = document.getElementById("warning");
 
@@ -33,7 +25,7 @@ function checkNumberOfPeople() {
 function calculateTip(percentageTip) {
     resultAmount.textContent = `$${((bill.value * percentageTip) / numberOfPeople.value).toFixed(2)}`;
     resultTotal.textContent = `$${((bill.value / numberOfPeople.value) + parseFloat(resultAmount.textContent.slice(1))).toFixed(2)}`;
-    hasBtnResetAttribute();
+    btnReset.removeAttribute('disabled');
 }
 
 for (let i = 0; i < percentages.length; i++) {
@@ -58,10 +50,10 @@ tipCustomPercent.addEventListener('focusout', e => {
     checkNumberOfPeople();
 })
 
-btnReset.addEventListener('click', () => {
+btnReset.addEventListener('click', e => {
     bill.value = '';
     numberOfPeople.value = '';
     resultAmount.textContent = '$0.00';
     resultTotal.textContent = '$0.00';
-    hasBtnResetAttribute();
+    e.target.setAttribute('disabled', '');
 })
